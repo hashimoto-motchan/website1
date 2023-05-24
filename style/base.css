@@ -128,6 +128,10 @@ ul {
     border-left: 0.4em solid #000;
     width: 80%;
     margin: 1em auto;
+    @media screen and (min-width:600px) {
+        /*　画面サイズが480pxからはここを読み込む　*/
+        width: 90%;
+    }
 }
 
 .wrapper_articles {
