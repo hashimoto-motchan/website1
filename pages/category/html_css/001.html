@@ -2,21 +2,53 @@
 <html>
 <head>
     <title>EIC</title>
-    <link rel="stylesheet" href="../style/base.css">
+    <link rel="stylesheet" href="../../../style/category/html_css/index.css">
     <!-- 以下で画面拡大ができるようにする→1pxがWebの1pxになる　参考：https://www.site-convert.com/archives/1528 -->
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes"> 
     <meta http-equiv="content-type" content="text/html; charset=UTF-8"></metahttp-equiv>
+    <link rel="stylesheet" href="../../../style/prism.css">
 </head>
 <body>
     <p class="header">hashimoto's blog</p>
     <div class="wrapper_sections">
         <div class="section">
             <div class="inner_section">
-                <div class="wrapper_fv_img">
-                    <img class="img fv_img" src="../images/index/fv_1.jpg" alt="fv" loading="lazy">
-                </div>
-                <p class="text_1">日本のエンジニアが少しでも新しい技術を学ぶ際に力になれるように基礎の内容からシンプルに解説。</p>
+                <h1 class="heading_1">HTMLファイルに外部CSS<span class="inline-block">ファイル</span>を読み込む方法</h1>
     
+                <div class="conclusion">
+                    <p class="conclution_word">結論</p>
+                    <p class="conclution_text">headタグ（&lt;head&gt;）内に</p>
+                    <pre class="syntax_highlighting line-numbers show-language" data-line="2">
+                        <code class="language-HTML show-language">
+                        <p>aaaaaaa</p>
+                        &lt;link rel="stylesheet"  href="〇〇.css"&gt;
+                        </code>
+                    </pre>
+                    <p>を入れる</p>
+                </div>
+
+                <pre >
+                    <code class="language-HTML（言語名）">
+                    　<!-- ソースコード start-->
+                    　<p>段落1</p>
+                    　<p>段落2</p>
+                    　<!-- ソースコード end-->
+                    </code>
+                </pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                 <p class="heading">カテゴリー記事一覧</p>
     
                 <div class="wrapper_categories">
@@ -28,7 +60,7 @@
                             </div>
             
                             <!-- 繰り返しできそう1 -->
-                            <a href="category/html_css/001.html" class="category_link">
+                            <a href="category/html_css/articles/001.html" class="category_link">
                                 <div class="list">
                                     <div class="icon_img">
                                         <img class="img" src="../images/index/html_logo_img.png" alt="HTMLアイコン" loading="lazy">
@@ -129,6 +161,7 @@
     <div class="footer">
         <p>© 2023 hashimoto's blog All rights reserved.</p>
     </div>
+    <script type="text/javascript" src="../../../download/prism.js"></script>
 </body>
 </html>
 
