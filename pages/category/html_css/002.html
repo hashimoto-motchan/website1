@@ -18,23 +18,49 @@
                         <p class="home_botton_text">HOME</p>
                     </div>
                 </a>
-                <h1 class="heading_1">HTMLファイルに外部CSS<span class="inline-block">ファイル</span>を読み込む方法</h1>
+                <h1 class="heading_1">preタグとcodeタグ使用時に左にスペースが空いてしまう時の対処法</h1>
     
                 <div class="conclusion">
                     <p class="conclution_word">結論</p>
-<pre class="line-numbers" >
-<code class="language-HTML">&lt;head&gt;
-    &lt;link rel="stylesheet" href="〇〇.css"&gt;
-&lt;/head&gt;
-</code>
-</pre>
+                    <p class="conclution_text">テキストエディタに記載されているコードのインデント（字下げ）を削除する（左に詰める）</p>
                 </div>
 
                 <div class="explanation_section">
                     <p class="heading_2_1">解説</p>
-                    <ul class="explanation_list">
-                        <li>href=””では、開きたい外部ファイルのpathを指定</li>
-                    </ul>
+                    <div>
+                        <p class="explanation_text">コードを画面そのままに反映させるにはpreタグとcodeタグが便利です。</p>
+                        <p class="explanation_text">preタグとcodeタグはテキストエディタに記載されているコードのインテンドを反映してしまいます。</p>
+                        <h3 class="sub_heading_3">普通に行った場合（インテンドあり）</h3>
+                        <div>
+                            <img class="img" src="../../../images/category/html_css/code002_1.png" alt="code002_1" loading="lazy">
+                        </div>
+                        <p class="code_title">実際のコード（VSコードを使用）</p>
+                        <pre class="line-numbers" >
+                            <code class="language-HTML">
+                                &lt;head&gt;
+                                    &lt;link rel="stylesheet" href="〇〇.css"&gt;
+                                &lt;/head&gt;
+                            </code>
+                        </pre>
+                        <p class="code_title">インテンドありのコードで表示されるコード画面（preとcodeを使用）</p>
+                        <p class="explanation_text">↑インテンドがそのまま反映されてしまい、左にスペースができてしまう。スクロールしないと見れなくてユーザビリティが低い。</p>
+                        <h3 class="sub_heading_3">インテンドを削除した場合</h3>
+                        <div>
+                            <img class="img" src="../../../images/category/html_css/code002_2.png" alt="code002_2" loading="lazy">
+                        </div>
+                        <p class="code_title">実際のコード</p>
+<pre class="line-numbers" >
+    <code class="language-HTML">
+        &lt;head&gt;
+            &lt;link rel="stylesheet" href="〇〇.css"&gt;
+        &lt;/head&gt;
+    </code>
+</pre>
+                        <p class="code_title">インテンドを削除したコードで表示されるコード画面（preとcodeを使用）</p>
+                        <p class="explanation_text">↑インテンドを削除することによってその分左に移動しました。</p>
+                        <p class="explanation_text"><br/>※上記のコード画面はprismを使用。preとcodeタグを調べると出来ました。</p>
+
+                    </div>
                 </div>
             </div>
         </div>
