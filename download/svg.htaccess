@@ -1,3 +1,2 @@
-// svg設定
 AddType image/svg+xml .svg .svgz
 AddEncoding gzip .svgz
