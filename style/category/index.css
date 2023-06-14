@@ -286,7 +286,7 @@ ul {
 }
 
 .category_img {
-    width:100%;
+    width: min(100%, 300px);
     margin: 1em auto;
     /* position: relative;
     top:-3em; */
