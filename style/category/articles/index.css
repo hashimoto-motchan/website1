@@ -260,6 +260,11 @@ ol {
     padding: 1em;
 }
 
+.article_img {
+    width: min(100%, 300px);
+    margin: 1em auto;
+}
+
 /* 以上FV */
 
 
