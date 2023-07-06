@@ -64,7 +64,7 @@ ul {
 
 .inner_section {
     background-color: #FFFFFF;
-    padding: 1em;
+    padding: 3vw;
     /* box-shadow: 0 0 57px 0 rgba(0,0,0,0.12), 0 2px 3px 0 rgba(0,0,0,.22); */
 }
 
@@ -98,6 +98,10 @@ ul {
 
 .img {
     width: 100%;
+}
+
+.img_2 {
+    object-fit: cover;
 }
 
 .wrapper_fv_img { 
@@ -143,48 +147,55 @@ ul {
 
 .wrapper_categories {
     @media screen and (min-width:600px) {
-        /*　画面サイズが480pxからはここを読み込む　*/
-        display:flex;
-        flex-wrap:wrap;
+        display: grid;
+        grid-template-columns: 45% 45%;
+        grid-template-rows: auto auto auto auto;
+        grid-auto-flow: column;
+        column-gap: 3%;
+        justify-content: center;
     }
 }
 
 .category {
     @media screen and (min-width:600px) {
         /*　画面サイズが480pxからはここを読み込む　*/
-        width:50%;
+        width:100%;
     }
 }
-
-
-
-
 
 .category_name {
     font-size: 1.8em;
     background-color: rgb(0, 0, 0);
     color:#FFFFFF;
     font-weight: bold;
+    --category_name_padding_side: 0.5em;
     padding: 0.75em 0.5em;
     text-align: center;
     border-left: 0.4em solid #000;
-    width: 80%;
-    margin: 1em auto;
+    width: calc(100% - 2 * 0.5em - 3%);
+    margin: 1rem auto;
+    /* height: 27px; */
+
 }
 
 .wrapper_list {
-    padding: 2em;
+    padding: 0 2em 2em;
+    display: flex;
+    flex-direction: column;
 }
 
 .category_img {
     width:100%;
-    margin: 1em auto;
-    position: relative;
-    top:-3em;
+    margin: 0em auto;
 }
 
 .category_link {
     text-decoration: none;
+}
+
+.wrapper_list_item {
+    flex-grow: 1;
+    margin-top: 1rem;
 }
 
 .list {
@@ -239,10 +250,12 @@ ul {
 .category_option {
     list-style:  none;
     font-size: 1.5em;
+    color: #000;
 }
 
 .category_option li {
     padding: 1em 0 0 1em;
+    color: #000;
 }
 
 .man {
@@ -263,3 +276,4 @@ ul {
     padding: 1em;
     text-align: center;
 }
+
