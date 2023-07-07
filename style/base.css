@@ -103,11 +103,10 @@ ul {
 .img_2 {
     object-fit: cover;
     @media screen and (max-width:600px) {
-        /* height: 200px; */
         width: 80%;
         display: block;
         margin: 0 auto;
-        object-fit:contain;
+        height: auto;
     }
 }
 
@@ -134,7 +133,7 @@ ul {
     padding: 1em;
 }
 
-/* 以上FV */
+/* 以上FV */ 
 
 .heading {
     font-size: 1.8em;
@@ -179,10 +178,13 @@ ul {
     padding: 0.75em 0.5em;
     text-align: center;
     border-left: 0.4em solid #000;
-    width: calc(100% - 2 * 0.5em - 3%);
+    width: auto;
     margin: 1rem auto;
     /* height: 27px; */
-
+    @media screen and (min-width:600px) {
+	/*　画面サイズが580pxより大きい場合はここを読み込む　*/
+        width: calc(100% - 2 * 0.5em - 3%);
+    }
 }
 
 .wrapper_list {
